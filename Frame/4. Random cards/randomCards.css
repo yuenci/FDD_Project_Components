@@ -1,0 +1,43 @@
+#random-card-container {
+    width: 1150px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+
+
+}
+
+#random-card-container img {
+    width: 100%;
+}
+
+
+.random-card {
+    height: 300px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+}
+
+#random-card1 {
+    left: 0px;
+}
+
+#random-card2 {
+    left: 230px;
+}
+
+#random-card3 {
+    left: 485px;
+}
+
+#random-card4 {
+    left: 740px;
+}
+
+#random-card5 {
+    left: 970px;
+}

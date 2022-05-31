@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            display: flex;
+            flex-direction: row;
+            width: 800px;
+            border: 2px solid black;
+            margin-bottom: 50px;
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        img {
+            height: 280px;
+            width: 180px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+    <script>
+        let dict = {
+            1: {
+                "pic": "./image/1.jpg",
+                "title": "this is title 1",
+                "description": "this is a description 1 this is a description 1 this is a description 1"
+            },
+            2: {
+                "pic": "./image/2.1.jpg",
+                "title": "this is title 2",
+                "description": "this is a description 2 this is a description 2 this is a description 2"
+            },
+            3: {
+                "pic": "./image/2.2.jpg",
+                "title": "this is title 3",
+                "description": "this is a description 3 this is a description 3 this is a description 3"
+            }
+        }
+
+        for (let index = 1; index < 4; index++) {
+            const element = dict[index];
+
+            let pic = element["pic"];
+            let title = element["title"];
+            let description = element["description"];
+
+            let card = document.createElement("div");
+            //card =  <div>       </div>
+            card.className = "card";
+            card.innerHTML = `
+            <img src="${pic}" alt="">
+            <div>
+                <div class="title">${title}</div>
+                <div class="description">${description}n</div>
+            </div>
+            `
+            document.body.append(card)
+        }
+
+    </script>
+</body>
+
+</html>

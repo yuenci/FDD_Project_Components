@@ -1,0 +1,16 @@
+.rate-yel-star {
+    color: yellow;
+}
+
+.rate-component {
+    position: relative;
+}
+
+.rate-component:hover {
+    cursor: pointer;
+}
+
+.rate-num {
+    position: absolute;
+    left: 100px;
+}

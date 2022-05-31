@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="input">
+    <br>
+    <button onclick="store()">Click</button>
+    <br>
+    <button onclick="show()">Show</button>
+    <br>
+    <button onclick="rating()">rating</button>
+    <br>
+    <button onclick="average()">AVE</button>
+    <script>
+        function store() {
+            let text = document.getElementById("input").value;
+            localStorage.setItem("val", text)
+            alert("store successfully!")
+        }
+        function show() {
+            let value = localStorage.getItem("val")
+            alert(value)
+        }
+
+        function rating() {
+            let rating = document.getElementById("input").value;
+            if (localStorage.getItem("rating")) {
+                let rateStore = localStorage.getItem("rating")
+                rateStore = Number(rateStore) + Number(rating)
+                localStorage.setItem("rating", rateStore)
+                alert(rateStore)
+            } else {
+                localStorage.setItem("rating", rating)
+                alert("rate successfully!")
+            }
+        }
+
+        function average() {
+            let rating = document.getElementById("input").value;
+            if (localStorage.getItem("rating")) {
+                let rateStore = localStorage.getItem("rating")
+                rateStore11 = JSON.parse(rateStore);
+                console.log(rateStore11);
+                rateStore12 = rateStore11.push(Number(rating))
+
+                let sum = 0
+                for (let i = 0; i < rateStore12.length; i++) {
+                    sum = sum + rateStore12[i]
+                }
+
+                console.log(sum);
+
+                let ave = sum / rateStore.length;
+                alert(ave)
+
+                //localStorage.setItem("rating", JSON.stringify(rateStore))
+            } else {
+                let reatingList = [Number(rating)];
+                localStorage.setItem("rating", JSON.stringify(reatingList))
+                alert("rate successfully!")
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

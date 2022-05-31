@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .text {
+            color: #000;
+        }
+
+        .text-dark {
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="text-dark">
+        <h1>Hello</h1>
+    </div>
+    <div class="text-dark">
+        <h1>World</h1>
+    </div>
+    <div class="text-dark">
+        <h1>World22</h1>
+    </div>
+    <div class="text-dark">
+        <h1>World33</h1>
+    </div>
+    <button onclick="switch1()">Switch</button>
+    <script>
+        document.body.style.backgroundColor = "black"
+        function switch1() {
+            let bodyBgc = document.body.style.backgroundColor;
+            if (bodyBgc == "white") {
+                document.body.style.backgroundColor = "black"
+
+                let texts = document.getElementsByClassName("text");
+                for (let index = 0; index < texts.length; index++) {
+                    const element = texts[index];
+                    element.className = "text-dark"
+                }
+            } else if (bodyBgc == "black") {
+                document.body.style.backgroundColor = "white"
+
+                let texts = document.getElementsByClassName("text-dark");
+                for (let index = 0; index < texts.length; index++) {
+                    const element = texts[index];
+                    element.className = "text"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

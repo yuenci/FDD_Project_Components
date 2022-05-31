@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #image-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 33%;
+        }
+
+        .btn {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
+        #la {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="btn" id="btn1">All</div>
+        <div class="btn" id="btn2">type 1</div>
+        <div class="btn" id="btn3">type 2</div>
+    </div>
+    <div id="image-container">
+        <div><img src="./image/1.jpg" alt="" id="pic1"></div>
+        <div><img src="./image/2.jpg" alt="" id="pic2"> </div>
+        <div><img src="./image/3.jpg" alt="" id="pic3"> </div>
+        <div><img src="./image/4.jpg" alt="" id="pic4"></div>
+        <div><img src="./image/5.jpg" alt="" id="pic5"></div>
+        <div><img src="./image/6.jpg" alt="" id="pic6"> </div>
+    </div>
+
+    <div id="la">lallaallallal</div>
+    <script>
+        let btn1Obj = document.getElementById("btn1");
+        let btn2Obj = document.getElementById("btn2");
+        let btn3Obj = document.getElementById("btn3");
+
+        let pic1Obj = document.getElementById("pic1");
+        let pic3Obj = document.getElementById("pic3");
+        let pic5Obj = document.getElementById("pic5");
+
+        let pic2Obj = document.getElementById("pic2");
+        let pic4Obj = document.getElementById("pic4");
+        let pic6Obj = document.getElementById("pic6");
+
+        btn1Obj.addEventListener("click", btn1click);
+        btn2Obj.addEventListener("click", btn2click);
+        btn3Obj.addEventListener("click", btn3click);
+
+        function btn1click() {
+            console.log("btn1");
+
+            let allele = [pic1Obj, pic2Obj, pic3Obj, pic4Obj, pic5Obj, pic6Obj];
+            for (let index = 0; index < allele.length; index++) {
+                let element = allele[index];
+                element.style.display = "inline";
+            }
+        };
+        function btn2click() {
+            console.log("btn2");
+
+            let allele1 = [pic2Obj, pic4Obj, pic6Obj];
+            for (let index = 0; index < allele1.length; index++) {
+                let element = allele1[index];
+                element.style.display = "none";
+            }
+            let allele2 = [pic1Obj, pic3Obj, pic5Obj];
+            for (let index = 0; index < allele2.length; index++) {
+                let element = allele2[index];
+                element.style.display = "inline";
+            }
+
+
+        };
+        function btn3click() {
+            console.log("btn3");
+
+            let allele1 = [pic1Obj, pic3Obj, pic5Obj];
+            for (let index = 0; index < allele1.length; index++) {
+                let element = allele1[index];
+                element.style.display = "none";
+            }
+            let allele2 = [pic2Obj, pic4Obj, pic6Obj];
+            for (let index = 0; index < allele2.length; index++) {
+                let element = allele2[index];
+                element.style.display = "inline";
+            }
+        };
+    </script>
+</body>
+
+</html>

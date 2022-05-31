@@ -1,0 +1,16 @@
+#body {
+    background-color: black;
+}
+
+#id1,
+#id2,
+.class1 {
+    color: white;
+}
+
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
