@@ -1,3 +1,10 @@
+/*
+ * @Author: Innis
+ * @Description: 
+ * @Date: 2022-05-30 11:19:49
+ * @LastEditTime: 2022-05-31 22:12:18
+ * @FilePath: \0522P-kk,lennon FDD project\Frame\4. Random cards\randomCards.js
+ */
 
 let container = document.getElementById("random-card-container")
 let btn = document.getElementById("btn")
@@ -15,10 +22,10 @@ if (container) {
 }
 window.onload = function () {
     move(img3).scale(1.5, 1.5).end();
-    move(img1).y(random()).end();
-    move(img2).y(random()).end();
-    move(img4).y(random()).end();
-    move(img5).y(random()).end();
+    // move(img1).y(random()).end();
+    // move(img2).y(random()).end();
+    // move(img4).y(random()).end();
+    // move(img5).y(random()).end();
 }
 
 let positionDict = {
