@@ -2,7 +2,7 @@
  * @Author: Innis
  * @Description: 
  * @Date: 2022-05-31 21:51:11
- * @LastEditTime: 2022-05-31 22:50:20
+ * @LastEditTime: 2022-05-31 22:57:44
  * @FilePath: \0522P-kk,lennon FDD project\Frame\6. ViewPager\view pager.js
  */
 
@@ -52,8 +52,6 @@ if (V_container) {
         V_post3 = V_post4;
         V_post4 = V_post5;
         V_post5 = temp;
-
-
     }
 
     btn_right.onclick = function () {
