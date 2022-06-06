@@ -98,3 +98,47 @@ function moveEle(obj, direction_value, zoom) {
         .end();
 }
 
+V_img1.onclick = function () {
+    goToPage(V_img1.children[0].src)
+}
+V_img2.onclick = function () {
+    goToPage(V_img2.children[0].src)
+}
+V_img3.onclick = function () {
+    goToPage(V_img3.children[0].src)
+}
+V_img4.onclick = function () {
+    goToPage(V_img4.children[0].src)
+}
+V_img5.onclick = function () {
+    goToPage(V_img5.children[0].src)
+}
+
+function goToPage(url) {
+    console.log(url);
+
+    let imageNameArgs = url.split("/")
+    console.log(imageNameArgs);
+
+
+    let imageName = imageNameArgs[imageNameArgs.length - 1]
+    console.log(imageName);
+
+
+    if (imageName == "1.png") {
+        window.location.href = 'https://www.google.com/#';
+    }
+    else if (imageName == "2.png") {
+        window.location.href = 'https://www.reddit.com/';
+    }
+    else if (imageName == "3.png") {
+        window.location.href = 'https://www.quora.com/';
+    }
+    else if (imageName == "4.png") {
+        window.location.href = 'https://twitter.com/home';
+    }
+    else if (imageName == "5.png") {
+        window.location.href = 'https://magi.com/';
+    }
+
+}

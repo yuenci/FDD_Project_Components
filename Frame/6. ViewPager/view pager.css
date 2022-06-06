@@ -78,3 +78,7 @@
 #viewPager-right .fa-chevron-right:hover {
     cursor: pointer;
 }
+
+.viewPager-card {
+    cursor: pointer;
+}
