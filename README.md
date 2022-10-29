@@ -86,7 +86,7 @@ Used to toggle the iframe in the page.
 3. Import dynamic insert script [4.1template.html](https://github.com/yuenci/FDD_Project_Components/blob/main/4.1template.html)
 4. Store data(number, string, json) to local storage [5.store.html](https://github.com/yuenci/FDD_Project_Components/blob/main/5.store.html)
 5. Set html background wiht JS [6.dark.html](https://github.com/yuenci/FDD_Project_Components/blob/main/6.dark.html)
-6. Embed google form in page (9.google form.html)[https://github.com/yuenci/FDD_Project_Components/blob/main/9.google%20form.html]
+6. Embed google form in page [9.google form.html](https://github.com/yuenci/FDD_Project_Components/blob/main/9.google%20form.html)
 
 
 ### Prerequisites
