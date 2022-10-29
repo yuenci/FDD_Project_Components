@@ -98,14 +98,6 @@ Used to toggle the iframe in the page.
 5. Set html background wiht JS [6.dark.html](https://github.com/yuenci/FDD_Project_Components/blob/main/6.dark.html)
 6. Embed google form in page [9.google form.html](https://github.com/yuenci/FDD_Project_Components/blob/main/9.google%20form.html)
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 <!-- USAGE EXAMPLES -->
 
