@@ -6,7 +6,7 @@
 
 ![pageView](https://github.com/yuenci/FDD_Project_Components/blob/main/demoImage/ImageViewer.gif)
 
-The purpose of this project is to provide some cool  and out of the box web components  for my friends' web development assignment. 😜
+The purpose of this project is to provide some cool  and out of the box web components  for my friends(KK & Lennon)' web development assignment. 😜
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
