@@ -111,7 +111,7 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-1. import JS first first
+1. Import JS first first
 
 ```javascript
 <script src="./view pager.js"></script>
